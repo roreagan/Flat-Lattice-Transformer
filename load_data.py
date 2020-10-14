@@ -475,13 +475,13 @@ def load_weibo_ner(path,unigram_embedding_path=None,bigram_embedding_path=None,i
 
     # print(datasets['train'][:5])
 
-    train_path = os.path.join(path,'weiboNER_2nd_conll.train_deseg')
+    train_path = os.path.join(path,'train_msra.tsv')
     dev_path = os.path.join(path, 'weiboNER_2nd_conll.dev_deseg')
-    test_path = os.path.join(path, 'weiboNER_2nd_conll.test_deseg')
+    test_path = os.path.join(path, 'test_msra.tsv')
 
     paths = {}
     paths['train'] = train_path
-    paths['dev'] = dev_path
+    #paths['dev'] = dev_path
     paths['test'] = test_path
 
     datasets = {}
